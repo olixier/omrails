@@ -1,0 +1,18 @@
+<% unless user_signed_in? %>
+	<div class="hero-unit">
+
+		<h1>Hello this is my new website!</h1>
+		<p>
+			Not sure what I'm doing but this is exciting...
+
+			by <%= link_to "Olivier Xu", "http://www.linkedin.com/in/olivierxu"%>
+
+		</p>
+
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+
+		</p>
+
+</div>
+<% end %>
